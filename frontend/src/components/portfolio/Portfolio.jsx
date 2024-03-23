@@ -6,7 +6,7 @@ export const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
 
   useEffect(() => {
-    axios.get("https://enzo-portfolio-api.onrender.com/api/portfolio").then((response) => {
+    axios.get("http://localhost:5000/api/portfolio").then((response) => {
       setPortfolio(response.data);
     });
   }, []);

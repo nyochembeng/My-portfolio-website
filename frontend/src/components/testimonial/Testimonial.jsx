@@ -17,7 +17,7 @@ export const Testimonial = () => {
   const [testimonials, setTestimonial] = useState([]);
 
   useEffect(() => {
-    axios.get("https://enzo-portfolio-api.onrender.com/api/testimonials").then((response) => {
+    axios.get("http://localhost:5000/api/testimonials").then((response) => {
       setTestimonial(response.data.slice(0, 10));
     });
   }, []);

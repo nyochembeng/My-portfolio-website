@@ -6,7 +6,7 @@ export const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    axios.get("https://enzo-portfolio-api.onrender.com/api/service").then((response) => {
+    axios.get("http://localhost:5000/api/service").then((response) => {
       setServices(response.data);
     });
   }, []);

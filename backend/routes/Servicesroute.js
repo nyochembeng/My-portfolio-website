@@ -43,42 +43,4 @@ router.route('/api/service')
         }
     });
 
-/*router.post('/api/listservices', async (req, res) => {
-
-    const services = [
-        {
-          service: "Web Development",
-          description: "I develop websites and web applications with modern technologies and frameworks to create engaging and responsive user experiences.",
-        },
-        {
-          service: "Mobile Development",
-          description: "I develop mobile applications for iOS and Android platforms, utilizing native and hybrid approaches to deliver high-performance and intuitive user interfaces.",
-        },
-        {
-          service: "Graphic Design",
-          description: "I offer professional graphic design services, including logo and branding design, marketing materials, and print design such as flyers and posters.",
-        },
-        {
-          service: "Web Building",
-          description: "I build custom websites using WordPress, the most popular content management system, to provide dynamic and user-friendly interfaces that are easy to manage and update.",
-        },
-        {
-          service: "Network Engineering",
-          des cription: "I provide networking solutions, including configuring routers and switches, and interconnecting networks to enable seamless communication and improve network performance.",
-        },
-        {
-          service: "Database Administration",
-          description: "I specialize in creating and managing databases, ensuring that your data is secure, organized, and easily accessible to support your business needs.",
-        },
-        {
-          service: "YouTube",
-          description: "I create high-quality video content for YouTube, covering a wide range of topics including technology, problem solving, and education, to engage and entertain my audience.",
-        },
-      ];
-    for (const service of services) {
-        const newService = new Service(service);
-        newService.save();
-    }
-})*/
-
 module.exports = router
