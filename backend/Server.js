@@ -21,6 +21,9 @@ async function connect(){
 //connecting to db
 connect();
 
+// Serve static files from the "assets" directory
+app.use('/assets', express.static('assets'));
+
 //routes
 app.use(require('./routes/Servicesroute'))
 app.use(require('./routes/Portfolioroute'))

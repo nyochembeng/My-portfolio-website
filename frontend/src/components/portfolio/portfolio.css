@@ -15,7 +15,7 @@
 .portfolio__item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;
-
+    color: var(--color-primary-variant);
 }
 
 .portfolio__item__image{
@@ -24,59 +24,13 @@
 }
 
 .portfolio__item h3{
-     margin: 1.2rem 0 2rem
+    text-align: center;
+     margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item__cta{
-    display: flex;
-    align-items: center;
-    margin-bottom:1rem;
-    gap: 1rem;
-    justify-content:center;
-}
-
-.portfolio__item__cta a {
-    position: relative;
-    background: var(--color-primary);
-    color: var(--color-bg);
-    border: 1px solid var(--color-primary);
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.portfolio__item__cta a:hover {
-    color: var(--color-primary);
-}
-
-.portfolio__item__cta a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--color-bg);
-    z-index: -1;
-    transition: var(--transition);
-}
-
-.portfolio__item__cta a:hover::before {
-    width: 100%;
-}
-
-.portfolio__item__cta a:nth-child(2) {
-    background: transparent;
-    color: var(--color-primary);
-}
-
-.portfolio__item__cta a:nth-child(2):hover {
-    color: var(--color-bg);
-}
-
-.portfolio__item__cta a:nth-child(2)::before {
-    background: var(--color-primary);
+    text-align: center;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width:1024px) {

@@ -17,7 +17,7 @@ router.route('/api/portfolio')
 
   .patch(async (req, res) => {
     const id = req.body._id
-    const portfolio = await Portfolio.findOne({ id });
+    const portfolio = await Portfolio.findById(id);
 
     if (!portfolio) {
       res.status(404).json({ message: "Portfolio not found" });
@@ -33,7 +33,7 @@ router.route('/api/portfolio')
 
   .delete(async (req, res) => {
     const id = req.body._id
-    const portfolio = await Portfolio.findOne({ id });
+    const portfolio = await Portfolio.findById(id);
     if (!portfolio) {
       res.status(404).json({ message: "Portfolio not found" });
       return;
@@ -41,57 +41,5 @@ router.route('/api/portfolio')
     await portfolio.remove();
     res.status(200).json({ message: "Portfolio deleted" });
   });
-
-router.post('/api/listportfolio', async (req, res) => {
-
-  const portfolios = [
-    {
-      title: "Web Development",
-      image: '../assets/web development.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "Software Development",
-      image: '../assets/software development.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "Web Building",
-      image: '../assets/web-design.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "Graphic Designing",
-      image: '../assets/graphic designing.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "Network Engineering",
-      image: '../assets/networking.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "YouTube",
-      image: '../assets/youtube.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-    {
-      title: "Database Administration",
-      image: '../assets/database.jpg',
-      screenshots: `https://example.com/portfolio/live`,
-      liveDemoLink: `https://example.com/portfolio/live`,
-    },
-  ];
-  for (const portfolio of portfolios) {
-    const newPortfolio = new Portfolio(portfolio);
-    newPortfolio.save();
-  }
-})
 
 module.exports = router

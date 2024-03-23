@@ -21,11 +21,10 @@ export const Portfolio = () => {
             <article key={port.id} className="portfolio__item">
             <h3> {port.title} </h3>
               <div className="portfolio__item__image">
-                <img src={`https://enzo-portfolio-api.onrender.com/${port.image}`} alt={port.title} className="portImage" />
+                <img src={`http://localhost:5000${port.image}`} alt={port.title} className="portImage" />
               </div>
               <div className="portfolio__item__cta">
-                <a href={port.screenshots} className="btn" target="_blank" rel="noreferrer">Screenshots</a>
-                <a href={port.liveDemoLink} className="btn btn-primary" target="blank" rel="noreferrer">Live Demo</a>
+                <a href={port.DemoLink} className="btn btn-primary" target="blank" rel="noreferrer">Demo</a>
               </div>
             </article>
           )        

@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const portfolioSchema = new mongoose.Schema({
   title: { type: String, required: true },
   image: { type: String, required: true },
-  screenshots: { type: String, required: true },
-  liveDemoLink: { type: String, required: true },
+  DemoLink: { type: String, required: true },
 });
 
 const Portfolio = mongoose.model("Portfolio", portfolioSchema);
