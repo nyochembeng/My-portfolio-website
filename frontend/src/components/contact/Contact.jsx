@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
 
     const emailParams = {
-      to_name: 'Nyochembeng Enzo',
+      to_name: 'Nyochembeng Enzo Nkengafack',
       to_email: 'nyochembengn@gmail.com',
       from_name: form.current.name.value,
       from_email: form.current.email.value,

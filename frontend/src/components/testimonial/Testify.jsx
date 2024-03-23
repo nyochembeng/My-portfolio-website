@@ -40,7 +40,7 @@ export const Testify = () => {
       });
 
     // alert
-    alert(`Thank you for your review, ${name}! I appreciate your feedback and will take it into account as I continue to improve in my services.`);
+    alert(`Thank you for your review, ${name}! I appreciate your feedback and will take it into considerations as I continue to render my services.`);
     const alertBox = document.querySelector('.alert');
     alertBox.style.backgroundColor = 'orange';
     alertBox.style.color = 'white';

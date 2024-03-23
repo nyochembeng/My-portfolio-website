@@ -6,7 +6,7 @@ const PORT = 5000
 app.use(cors())
 app.use(express.json())
 
-const uri = "mongodb+srv://nyochembengn:itz4life@myportfoliocluster.yalu2zg.mongodb.net/?retryWrites=true&w=majority&appName=MyPortfolioCluster"
+const uri = "mongodb+srv://nyochembengn:itz4life@myportfoliocluster.yalu2zg.mongodb.net/PortfolioDB?retryWrites=true&w=majority&appName=MyPortfolioCluster"
 
 async function connect(){
     try{
