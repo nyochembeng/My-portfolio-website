@@ -14,7 +14,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me__image">
-            <img src={moi} alt="My image " />
+            <img src={moi} alt="Me " />
             <span className='about_img_hover'></span>
           </div>
         </div>
@@ -23,17 +23,17 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years</small>
+              <small>3+ Years</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>3 world widely</small>
+              <small>3+ world widely</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>5 Completed</small>
+              <small>15+ Completed</small>
             </article>
           </div>
           <p>
