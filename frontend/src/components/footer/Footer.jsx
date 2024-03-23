@@ -3,7 +3,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 import {FaFacebookF} from 'react-icons/fa'
 import {CgTwitter} from "react-icons/cg"
-import Logo from '../../assets/ferrari horse.png'
+import Logo from '../../assets/my logo.png'
 
 import './footer.css'
 const Footer = () => {

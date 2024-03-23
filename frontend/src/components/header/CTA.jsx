@@ -1,6 +1,6 @@
 
 import React from 'react'
-import CV from '.././../assets/Nyochembeng Enzo Nkengafack.pdf'
+import CV from '.././../assets/Nyochembeng Enzo Nkengafack Resume.pdf'
 
 const CTA = () => {
     return (

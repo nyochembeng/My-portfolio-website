@@ -7,26 +7,10 @@ const { renderToString } = require('react-dom/server')
 // importing react-icons
 const { BiCodeBlock } = require('react-icons/bi')
 const {BsWordpress} = require('react-icons/bs')
-const {FaCode} = require('react-icons/fa')
-const {FaPython} = require('react-icons/fa')
 const {AiFillDatabase} = require('react-icons/ai')
 const {CgWebsite} = require('react-icons/cg')
-const {FaLaptopCode} = require('react-icons/fa')
 const {MdOutlineDesignServices} = require('react-icons/md')
-const {FaNetworkWired} = require('react-icons/fa')
-const {FaYoutube} = require('react-icons/fa')
-
-// Convert the React-icon components to string representation
-const iconString1 = renderToString(React.createElement(BiCodeBlock, null));
-const iconString2 = renderToString(React.createElement(BsWordpress, null));
-const iconString3 = renderToString(React.createElement(FaCode, null));
-const iconString4 = renderToString(React.createElement(FaPython, null));
-const iconString5 = renderToString(React.createElement(AiFillDatabase, null));
-const iconString6 = renderToString(React.createElement(CgWebsite, null));
-const iconString7 = renderToString(React.createElement(FaLaptopCode, null));
-const iconString8 = renderToString(React.createElement(MdOutlineDesignServices, null));
-const iconString9 = renderToString(React.createElement(FaNetworkWired, null));
-const iconString10 = renderToString(React.createElement(FaYoutube, null));
+const {FaNetworkWired, FaYoutube, FaLaptopCode, FaPython, FaCode} = require('react-icons/fa')
 
 
 
@@ -71,69 +55,69 @@ router.route('/api/experience')
         }
      });
 
-/* router.post('/api/listexperience', async (req, res) => {
+router.post('/api/listexperience', async (req, res) => {
 
-    // Create 10 experiences
+    // Create experiences
     const experiences = [
         {
-            icon: iconString1,
-            skill: 'Web Development',
+            iconKey: 'BiCodeBlock',
+            skill: 'Frontend Web Development',
             detail: 'HTML, CSS & JS',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString2,
+            iconKey: 'BsWordpress',
             skill: 'Web Building',
             detail: 'WordPress',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString3,
+            iconKey: 'FaCode',
             skill: 'C/C++',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString4,
+            iconKey: 'FaPython',
             skill: 'Python',
             levelOfKnowledge: 'Beginner',
         },
         {
-            icon: iconString5,
+            iconKey: 'AiFillDatabase',
             skill: 'Database Administration',
             detail: 'SQL, MySQL',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString6,
+            iconKey: 'CgWebsite',
             skill: 'MERN',
             detail: 'Mongoose, Express, React, NodeJS',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString7,
+            iconKey: 'FaLaptopCode',
             skill: 'Software Development',
             detail: 'Java, Python',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString8,
+            iconKey: 'MdOutlineDesignServices',
             skill: 'Graphic Designing',
             detail: 'Adobe Photoshop, Adobe Illustrator',
             levelOfKnowledge: 'Advanced',
         },
         {
-            icon: iconString9,
+            iconKey: 'FaNetworkWired',
             skill: 'Networking',
             detail: 'Configuration of Switches & Routers',
             levelOfKnowledge: 'Intermediate',
         },
         {
-            icon: iconString3,
+            iconKey: 'FaCode',
             skill: 'Matlab',
             levelOfKnowledge: 'Beginner',
         },
         {
-            icon: iconString10,
+            iconKey: 'FaYoutube',
             skill: 'Youtube',
             detail: 'Channel link',
             levelOfKnowledge: 'Beginner',
@@ -144,6 +128,6 @@ router.route('/api/experience')
         const newExperience = new Experience(experience);
         newExperience.save();
     }
-})*/
+})
 
 module.exports = router

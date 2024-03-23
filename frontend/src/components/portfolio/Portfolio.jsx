@@ -21,7 +21,7 @@ export const Portfolio = () => {
             <article key={port.id} className="portfolio__item">
             <h3> {port.title} </h3>
               <div className="portfolio__item__image">
-                <img src={`https://enzo-portfolio-api.onrender.com/${port.image}`} alt="Image" className="portImage" />
+                <img src={`https://enzo-portfolio-api.onrender.com/${port.image}`} alt={port.title} className="portImage" />
               </div>
               <div className="portfolio__item__cta">
                 <a href={port.screenshots} className="btn" target="_blank" rel="noreferrer">Screenshots</a>
