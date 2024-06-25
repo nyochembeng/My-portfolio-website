@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./testimonial.css";
 import axios from "axios";
 import Testify from './Testify';
+import config from "../../config.json"
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from "swiper";
@@ -17,7 +18,7 @@ export const Testimonial = () => {
   const [testimonials, setTestimonial] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/testimonials").then((response) => {
+    axios.get(`${config.webServiceUrl}/api/testimonials`).then((response) => {
       setTestimonial(response.data.slice(0, 10));
     });
   }, []);

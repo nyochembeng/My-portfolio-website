@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./services.css";
+import config from "../../config.json"
 
 export const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/service").then((response) => {
+    axios.get(`${config.webServiceUrl}/api/service`).then((response) => {
       setServices(response.data);
     });
   }, []);

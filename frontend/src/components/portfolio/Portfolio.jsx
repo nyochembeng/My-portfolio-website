@@ -1,12 +1,13 @@
 import "./portfolio.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import config from "../../config.json"
 
 export const Portfolio = () => {
   const [portfolio, setPortfolio] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/portfolio").then((response) => {
+    axios.get(`${config.webServiceUrl}/api/portfolio`).then((response) => {
       setPortfolio(response.data);
     });
   }, []);
@@ -21,7 +22,7 @@ export const Portfolio = () => {
             <article key={port.id} className="portfolio__item">
             <h3> {port.title} </h3>
               <div className="portfolio__item__image">
-                <img src={`http://localhost:5000${port.image}`} alt={port.title} className="portImage" />
+                <img src={`${config.webServiceUrl}${port.image}`} alt={port.title} className="portImage" />
               </div>
               <div className="portfolio__item__cta">
                 <a href={port.DemoLink} className="btn btn-primary" target="blank" rel="noreferrer">Demo</a>

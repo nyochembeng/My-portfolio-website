@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./experience.css";
+import config from "../../config.json"
 
 // importing react-icons
 import { BiCodeBlock } from "react-icons/bi";
@@ -37,7 +38,7 @@ export const Experience = () => {
   const [experiences, setExperience] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/experience").then((response) => {
+    axios.get(`${config.webServiceUrl}/api/experience`).then((response) => {
       setExperience(response.data);
     });
   }, []);
