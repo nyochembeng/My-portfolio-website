@@ -11,6 +11,7 @@
   },
   "homepage": ".",
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.12",
     "axios": "^1.4.0",
     "cra-template": "^1.2.0",
     "emailjs-com": "^3.2.0",
