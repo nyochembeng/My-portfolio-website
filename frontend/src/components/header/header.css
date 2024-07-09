@@ -225,6 +225,7 @@ header {
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 0.9rem;
+    cursor: pointer;
 }
 
 .scroll__down:hover {

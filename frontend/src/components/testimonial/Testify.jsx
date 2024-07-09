@@ -61,7 +61,7 @@ export const Testify = () => {
         <input type="text" name="name" placeholder="Full Name"  onChange={(e) => setName(e.target.value)} required/>
         <input type="email" name="email" placeholder="Email"  onChange={(e) => setEmail(e.target.value)} required/>
         <textarea name="review" id="review" cols="30" rows="10" placeholder="Review"  onChange={(e) => setTestimonial(e.target.value)} required></textarea>
-        <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Testify</button>
+        <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Submit</button>
       </form>
       <div className="alert"></div>
     </section>
