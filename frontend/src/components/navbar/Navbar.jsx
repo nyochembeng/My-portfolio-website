@@ -38,7 +38,7 @@ const Navbar = () => {
         </Link>
         <Link
           data-tooltip-id="my-tooltip"
-          data-tooltip-content="Experience"
+          data-tooltip-content="Expertise"
           activeClass="active"
           to="experience"
           spy={true}

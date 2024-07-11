@@ -9,8 +9,8 @@ import Logo from "../../assets/my logo.png";
 import "./footer.css";
 
 const Footer = () => {
-  const presentDate = new Date();
-  const year = presentDate.getFullYear;
+  const today = new Date();
+  const year = today.getFullYear();
 
   return (
     <div className="footer__container">
@@ -24,7 +24,7 @@ const Footer = () => {
         offset={-70}
         duration={500}
       >
-        <img src={Logo} alt="My Logo" className="my-logo"/>
+        <img src={Logo} alt="My Logo" className="my-logo" />
       </Link>
 
       <ul className="permalinks">
@@ -120,7 +120,7 @@ const Footer = () => {
 
       <div className="copyRight">
         <h3>
-          &copy; 2024 {year} Nyochembeng Enzo Nkengafack. All rights reserved
+          &copy; {year} Nyochembeng Enzo Nkengafack. All rights reserved
         </h3>
       </div>
     </div>

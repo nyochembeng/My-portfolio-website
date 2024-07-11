@@ -103,8 +103,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get in touch</h5>
       <h2>Contact me</h2>
+      <h5>Get in touch</h5>
 
       <div className="container contact__container">
         <div className="contact__options">
