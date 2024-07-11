@@ -3,9 +3,8 @@ import { Link } from "react-scroll";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { CgTwitter } from "react-icons/cg";
+import { FaGithub, FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import Logo from "../../assets/my logo.png";
 
 import "./footer.css";
@@ -25,7 +24,7 @@ const Footer = () => {
         offset={-70}
         duration={500}
       >
-        <img src={Logo} alt="My Logo" />
+        <img src={Logo} alt="My Logo" className="my-logo"/>
       </Link>
 
       <ul className="permalinks">
@@ -105,23 +104,23 @@ const Footer = () => {
       <Tooltip id="my-tooltip" />
 
       <div className="footer__media">
-        <a href="https://linkedin.com" target="blank">
-          <BsLinkedin />
-        </a>
         <a href="https://github.com" target="blank">
           <FaGithub />
+        </a>
+        <a href="https://linkedin.com" target="blank">
+          <BsLinkedin />
         </a>
         <a href="https://facebook.com" target="blank">
           <FaFacebookF />
         </a>
         <a href="https://twitter.com" target="blank">
-          <CgTwitter />
+          <FaXTwitter />
         </a>
       </div>
 
       <div className="copyRight">
         <h3>
-          &copy; 2024 {year} Nyochembeng Enzo Nkengafack | All rights reserved
+          &copy; 2024 {year} Nyochembeng Enzo Nkengafack. All rights reserved
         </h3>
       </div>
     </div>

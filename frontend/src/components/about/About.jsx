@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import CTA from "../header/CTA";
-import moi from "../../assets/Me.jpg";
+import moi from "../../assets/Moi.jpeg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -36,12 +36,12 @@ const About = () => {
               <small>15+ Completed</small>
             </article>
           </div>
-          <p>
+          <p className="intro">
             I am a Software Engineering student at the University of Buea, in
             the Faculty of Engineering and Technology. Also, a Software
             Developer specializing in the building of efficient, scalable and
             robust web and mobile applications. Acquired various skills in
-            various domains over the past years which are: Problem-Solving, Team
+            various domains over the past years which are; Problem-Solving, Team
             Collaboration, Technical Documentation and Programming.
           </p>
           <CTA />

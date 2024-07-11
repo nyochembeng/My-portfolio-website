@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./experience.css";
-import config from "../../config.json"
+import config from "../../config.json";
 
 // importing react-icons
 import { BiCodeBlock } from "react-icons/bi";
@@ -16,7 +16,7 @@ import {
   FaLaptopCode,
   FaPython,
   FaCode,
-  FaReact
+  FaReact,
 } from "react-icons/fa";
 
 const iconMapping = {
@@ -31,7 +31,7 @@ const iconMapping = {
   FaNetworkWired: <FaNetworkWired />,
   FaYoutube: <FaYoutube />,
   FaReact: <FaReact />,
-  AiOutlineLaptop :<AiOutlineLaptop />
+  AiOutlineLaptop: <AiOutlineLaptop />,
 };
 
 export const Experience = () => {
@@ -45,25 +45,14 @@ export const Experience = () => {
 
   return (
     <section id="experience">
-      <h2>My Experience</h2>
+      <h2>My Expertise</h2>
       <h5>What skills have I?</h5>
       <div className="container experience__container">
         {experiences.map((experience) => (
           <div key={experience._id} className="experience">
             <p className="icon">{iconMapping[experience.iconKey]}</p>
             <h3>{experience.skill}</h3>
-            {/* Check if the skill is 'Youtube', then render the detail as a link */}
-            {experience.skill === "Youtube" ? (
-              <a
-                href='https://youtube.com/'
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h6>{experience.detail}</h6>
-              </a>
-            ) : (
-              <h6>{experience.detail}</h6>
-            )}
+            <h6>{experience.detail}</h6>
             <p>{experience.levelOfKnowledge}</p>
           </div>
         ))}

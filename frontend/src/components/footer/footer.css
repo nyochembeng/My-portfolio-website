@@ -86,18 +86,23 @@
 }
 
 @media screen and(max-width:1024px) {
-
-    
+    .permalinks{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {    
-    .permalinks{
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
     .footer__media{
         margin-bottom: 2.6rem;
+    }
+
+    .permalinks{
+        display: none;
+    }
+
+    .footer__logo{
+        width: 60%;
     }
 
 }
