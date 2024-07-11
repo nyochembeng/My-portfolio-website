@@ -6,8 +6,8 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Logo from "../../assets/my logo.png";
-
 import "./footer.css";
+
 const Footer = () => {
   const presentDate = new Date();
   const year = presentDate.getFullYear;
